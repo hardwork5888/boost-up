@@ -321,42 +321,215 @@ header{
                 display: flex;
                 align-items: center;
                 .choos__card{
-
+                    flex: 0 1 391px;
+                    background-color: #fff;
+                    padding-top: 57px;
+                    padding-bottom: 48px;
+                    text-align: center;
                     h4{
+                        text-transform: uppercase;
                         font-family: Lato;
                         font-size: 25px;
                         font-weight: 300;
                         line-height: 0.88;
                         text-align: center;
                         color: #818b95;
+                        margin: 0 auto 30px;
                     }
                     img{
-
+                        margin: 0 auto 33px;
                     }
                     ul{
-
+                        margin: 0 auto 19px;
                         li{
                             height: 40px;
+                            position: relative;
+                            width: 329px;
+                            margin: 0 auto;
                             p{
+                                text-align: center;
                                 margin: auto;
                                 font-family: Lato;
                                 font-size: 14px;
                                 line-height: 2.86;
-                                text-align: center;
                                 color: #b5bbc1;
+
                             }
-                            position: relative;
                             &::before{
+                                content: '';
                                 position: absolute;
-                                width: 329px;
+                                width:  100%;
                                 height: 1px;
+                                top: 0;
+                                left: 0;
+                                background-color: #e2e9f0;
+                            }
+                        }
+                    }
+
+                    button{
+                        width: 131px;
+                        height: 42px;
+                        background-color: #ffbb42;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                }
+                .choos__card__blue{
+                    background-color: #709dca;
+                    width: 395px;
+                    padding-top: 87px;
+                    padding-bottom: 78px;
+                    h4{
+                        color: #fff;
+                    }
+                    ul{
+                        li{
+                            &::before{
+                                color: #c2e1ff;
+                            }
+                            p{
+                                color: #c2e1ff;
                             }
                         }
                     }
                 }
+                
             }
         }
     }
+
+    .how{
+        .how__wrapper{
+            max-width: 1113px;
+            margin: 0 auto;
+            padding-top: 155px;
+            padding-bottom: 149px;
+            text-align: center;
+            .how__title{
+                margin: 0 auto 72px;
+                p{
+                    text-align: center;
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 1.22;
+                    color: #394b50;
+                }
+                h3{
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-family: Gotham;
+                    font-size: 30px;
+                    font-weight: 900;
+                    letter-spacing: -0.75px;
+                }
+            }
+            .how__cards{
+                width: 100%;
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                margin-bottom: 91px;
+                .how__card{
+                    width: 213px;
+                    padding-top: 40px;
+                    img{
+                        margin: 0 auto 102px;
+                    }
+                    h4{
+                        text-transform: uppercase;
+                        margin: 0 auto 28px;
+                        text-align: center;
+                        font-family: Lato;
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 1.1;
+                        color: #394b50;
+                    }
+                    p{
+                        font-family: OpenSans;
+                        font-size: 13px;
+                        line-height: 1.69;
+                        text-align: center;
+                        color: #7b7b7b;
+                    }
+                }
+                .how__arrows{
+                    width:  65.4%;
+                    height: 126px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0); /* Сдвиг для центрирования */
+                    color: white;
+                    text-align: center;
+                    .arrow-1{
+                        align-self: flex-start;
+                    }
+                    .arrow-2{
+                        align-self: flex-end;
+                    }
+                }
+            }
+            button{
+                text-transform: uppercase;
+                font-family: Lato;
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
+                background-color: #e7ad48;
+                width: 165px;
+                height: 46px;
+                margin: 0 auto;
+            }
+
+        }
+    }
+
+    .happy{
+        background-color: #ffc155;
+        padding-top: 141px;
+        padding-bottom: 160px;
+
+        .happy__wrapper{
+            margin: 0 auto;
+            max-width: 1170px;
+            .happy__title{
+                text-align: center;
+                margin-bottom: 58px;
+                h3{
+                    text-transform: uppercase;
+                    font-family: Gotham;
+                    font-size: 30px;
+                    font-weight: 900;
+                    letter-spacing: -0.75px;
+                    color: #fff;
+                }
+                p{
+                    font-family: OpenSans;
+                    font-size: 16px;
+                    line-height: 1.38;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+            .happy__cards{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .happy__card{
+                    margin-bottom: 20px;
+                    width: 567px;
+                    height: 241px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
 }
 
 

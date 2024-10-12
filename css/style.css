@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(null.css);
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
@@ -375,28 +376,214 @@ header .header__wrapper .header__menu ul li.header__menu-chosen {
       -ms-flex-align: center;
           align-items: center;
 }
+.wrapper .choos .choos__wrapper .choos__cards .choos__card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 391px;
+          flex: 0 1 391px;
+  background-color: #fff;
+  padding-top: 57px;
+  padding-bottom: 48px;
+  text-align: center;
+}
 .wrapper .choos .choos__wrapper .choos__cards .choos__card h4 {
+  text-transform: uppercase;
   font-family: Lato;
   font-size: 25px;
   font-weight: 300;
   line-height: 0.88;
   text-align: center;
   color: #818b95;
+  margin: 0 auto 30px;
+}
+.wrapper .choos .choos__wrapper .choos__cards .choos__card img {
+  margin: 0 auto 33px;
+}
+.wrapper .choos .choos__wrapper .choos__cards .choos__card ul {
+  margin: 0 auto 19px;
 }
 .wrapper .choos .choos__wrapper .choos__cards .choos__card ul li {
   height: 40px;
   position: relative;
+  width: 329px;
+  margin: 0 auto;
 }
 .wrapper .choos .choos__wrapper .choos__cards .choos__card ul li p {
+  text-align: center;
   margin: auto;
   font-family: Lato;
   font-size: 14px;
   line-height: 2.86;
-  text-align: center;
   color: #b5bbc1;
 }
 .wrapper .choos .choos__wrapper .choos__cards .choos__card ul li::before {
+  content: "";
   position: absolute;
-  width: 329px;
+  width: 100%;
   height: 1px;
+  top: 0;
+  left: 0;
+  background-color: #e2e9f0;
+}
+.wrapper .choos .choos__wrapper .choos__cards .choos__card button {
+  width: 131px;
+  height: 42px;
+  background-color: #ffbb42;
+  color: #fff;
+  text-transform: uppercase;
+}
+.wrapper .choos .choos__wrapper .choos__cards .choos__card__blue {
+  background-color: #709dca;
+  width: 395px;
+  padding-top: 87px;
+  padding-bottom: 78px;
+}
+.wrapper .choos .choos__wrapper .choos__cards .choos__card__blue h4 {
+  color: #fff;
+}
+.wrapper .choos .choos__wrapper .choos__cards .choos__card__blue ul li::before {
+  color: #c2e1ff;
+}
+.wrapper .choos .choos__wrapper .choos__cards .choos__card__blue ul li p {
+  color: #c2e1ff;
+}
+.wrapper .how .how__wrapper {
+  max-width: 1113px;
+  margin: 0 auto;
+  padding-top: 155px;
+  padding-bottom: 149px;
+  text-align: center;
+}
+.wrapper .how .how__wrapper .how__title {
+  margin: 0 auto 72px;
+}
+.wrapper .how .how__wrapper .how__title p {
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.22;
+  color: #394b50;
+}
+.wrapper .how .how__wrapper .how__title h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Gotham;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.75px;
+}
+.wrapper .how .how__wrapper .how__cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 91px;
+}
+.wrapper .how .how__wrapper .how__cards .how__card {
+  width: 213px;
+  padding-top: 40px;
+}
+.wrapper .how .how__wrapper .how__cards .how__card img {
+  margin: 0 auto 102px;
+}
+.wrapper .how .how__wrapper .how__cards .how__card h4 {
+  text-transform: uppercase;
+  margin: 0 auto 28px;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #394b50;
+}
+.wrapper .how .how__wrapper .how__cards .how__card p {
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.69;
+  text-align: center;
+  color: #7b7b7b;
+}
+.wrapper .how .how__wrapper .how__cards .how__arrows {
+  width: 65.4%;
+  height: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); /* Сдвиг для центрирования */
+  color: white;
+  text-align: center;
+}
+.wrapper .how .how__wrapper .how__cards .how__arrows .arrow-1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.wrapper .how .how__wrapper .how__cards .how__arrows .arrow-2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.wrapper .how .how__wrapper button {
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #e7ad48;
+  width: 165px;
+  height: 46px;
+  margin: 0 auto;
+}
+.wrapper .happy {
+  background-color: #ffc155;
+  padding-top: 141px;
+  padding-bottom: 160px;
+}
+.wrapper .happy .happy__wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.wrapper .happy .happy__wrapper .happy__title {
+  text-align: center;
+  margin-bottom: 58px;
+}
+.wrapper .happy .happy__wrapper .happy__title h3 {
+  text-transform: uppercase;
+  font-family: Gotham;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.75px;
+  color: #fff;
+}
+.wrapper .happy .happy__wrapper .happy__title p {
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: #fff;
+}
+.wrapper .happy .happy__wrapper .happy__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.wrapper .happy .happy__wrapper .happy__cards .happy__card {
+  margin-bottom: 20px;
+  width: 567px;
+  height: 241px;
+  background-color: #fff;
 }
