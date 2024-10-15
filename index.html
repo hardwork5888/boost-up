@@ -14,19 +14,19 @@
         </div>
         <div class="header__menu">
             <ul>
-                <li class="header__menu-chosen">Home</li>
-                <li>Service</li>
-                <li>About us</li>
-                <li>Pricing Table</li>
-                <li>How it work</li>
-                <li>Happy Clients</li>
-                <li>Contact Us</li>
+                <li class="header__menu-chosen"><a href="#home" onclick="scrollToSection(event, 'home')">Home</a></li>
+                <li><a href="#services" onclick="scrollToSection(event, 'services')">Service</a></li>
+                <li><a href="#about-us" onclick="scrollToSection(event, 'about-us')">About us</a></li>
+                <li><a href="#pricing-table" onclick="scrollToSection(event, 'pricing-table')">Pricing Table</a></li>
+                <li><a href="#how" onclick="scrollToSection(event, 'how')">How it work</a></li>
+                <li><a href="#happy" onclick="scrollToSection(event, 'happy')">Happy Clients</a></li>
+                <li><a href="#contact-us" onclick="scrollToSection(event, 'contact-us')">Contact Us</a></li>
             </ul>
         </div>
     </div>
 </header>    
     <div class="wrapper">
-        <div class="local-business">
+        <div class="local-business" id="home" >
             <div class="local-business__wrapper">
                 <div class="local-business__title">
                     <h1>Boost up your Local business</h1>
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <div class="services">
+        <div class="services" id="services">
             <div class="services__wrapper">
                 <div class="services__title">
                     <h2>Our Services</h2>
@@ -148,7 +148,7 @@
             </div>
         </div>
 
-        <div class="about-us">
+        <div class="about-us" id="about-us">
             <div class="about-us__pic">
                 <img src="img/about-us-img.png" alt="">
             </div>
@@ -162,7 +162,7 @@
             </div>
         </div>
 
-        <div class="choos">
+        <div class="choos" id="pricing-table">
             <div class="choos__wrapper">
                 <div class="choos__title">
                     <h3>Choos your price</h3> 
@@ -203,7 +203,7 @@
             </div>
         </div>
 
-        <div class="how">
+        <div class="how" id="how">
             <div class="how__wrapper">
                 <div class="how__title">
                     <h3>How it works</h3>
@@ -244,7 +244,7 @@
             </div>
         </div>
 
-        <div class="happy">
+        <div class="happy" id="happy">
             <div class="happy__wrapper">
                 <div class="happy__title">
                     <h3>Happy Clients</h3>
@@ -252,24 +252,120 @@
                 </div>
                 <div class="happy__cards">
                     <div class="happy__card">
-                        
+                        <div class="happy__photo">
+                            <img src="img/first.png" alt="">
+                        </div>
+                        <div class="happy__text">
+                            <p class="happy__text-top">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make.
+                                a type specimen book.
+                               
+                               , but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p class="happy__text-bottom"><span>Darwin Michle,</span> Project manager</p>
+                        </div>
                     </div>
                     <div class="happy__card">
-                        
+                        <div class="happy__photo">
+                            <img src="img/second.png" alt="">
+                        </div>
+                        <div class="happy__text">
+                            <p class="happy__text-top">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make.
+                                a type specimen book.
+                               
+                               , but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p class="happy__text-bottom"><span>Madam Elisabath,  </span> Creative Director</p>
+                        </div>
                     </div>
                     <div class="happy__card">
-                        
+                        <div class="happy__photo">
+                            <img src="img/third.png" alt="">
+                        </div>
+                        <div class="happy__text">
+                            <p class="happy__text-top">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make.
+                                a type specimen book.
+                               
+                               , but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p class="happy__text-bottom"><span>Clips arter,</span>  Lipsum directer</p>
+                        </div>
                     </div>
                     <div class="happy__card">
-                        
+                        <div class="happy__photo">
+                            <img src="img/fourth.png" alt="">
+                        </div>
+                        <div class="happy__text">
+                            <p class="happy__text-top">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                it to make.
+                                a type specimen book.
+                               
+                               , but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p class="happy__text-bottom"><span>zam cristafr,</span> manager</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-<footer>
 
-</footer>    
+        <div class="newsletter" id="contact-us">
+            <div class="newsletter__title title">
+                <h3>NEWSLETTER</h3>
+                <p>Lorem Ipsum is simply dummy Business industry</p>
+            </div>
+            <div class="newsletter__form">
+                <div class="newsletter__name">
+                    <img src="img/name-logo.png" alt="">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="newsletter__email">
+                    <img src="img/email-logo.png" alt="">
+                    <input type="text" placeholder="Email Address">
+                </div>
+                <button>Subscribe now</button>
+            </div>
+        </div>
+
+        <div class="map">
+            <img src="img/map.png" alt="">
+        </div>
+        <script>
+            function scrollToSection(event, sectionId) {
+                event.preventDefault(); // Останавливаем стандартное поведение ссылки
+                document.getElementById(sectionId).scrollIntoView({
+                    behavior: 'smooth' // Плавная прокрутка
+                });
+            }
+        </script>
+        <div class="nav">
+            <div class="nav__line"></div>
+            <ul>
+                <li><a href="#home" onclick="scrollToSection(event, 'home')">Home</a></li>
+                <li><a href="#services" onclick="scrollToSection(event, 'services')">Service</a></li>
+                <li><a href="#about-us" onclick="scrollToSection(event, 'about-us')">About us</a></li>
+                <li><a href="#pricing-table" onclick="scrollToSection(event, 'pricing-table')">Pricing Table</a></li>
+                <li><a href="#how" onclick="scrollToSection(event, 'how')">How it work</a></li>
+                <li><a href="#happy" onclick="scrollToSection(event, 'happy')">Happy Clients</a></li>
+                <li><a href="#contact-us" onclick="scrollToSection(event, 'contact-us')">Contact Us</a></li>
+            </ul>
+            <div class="nav__phone">
+                <img src="img/nav-phone.png" alt="">
+                <p>+987 9976 999</p>
+            </div>
+
+            <div class="nav__socials">
+                <img src="img/twitter.png" alt="">
+                <img src="img/facebook.png" alt="">
+                <img src="img/google.png" alt="">
+                <img src="img/linkedn.png" alt="">
+            </div>
+        </div>
+        
+
+    </div>
+
+
+    
 </body>
-</html>
+<footer>
+    <p>All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</p>
+</footer></html>

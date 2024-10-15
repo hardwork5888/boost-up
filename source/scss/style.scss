@@ -1,7 +1,10 @@
 @import url(null.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+a{
+    color: inherit;
+    text-decoration: none; 
+}
 @font-face {
     font-family: 'Gotham';
     src: local('Gotham Black'), local('Gotham-Black'),
@@ -519,17 +522,207 @@ header{
             .happy__cards{
                 display: flex;
                 justify-content: space-between;
+                align-items: flex-start;
                 flex-wrap: wrap;
                 .happy__card{
                     margin-bottom: 20px;
                     width: 567px;
                     height: 241px;
                     background-color: #fff;
+                    display: flex;
+                    .happy__photo{
+                        img{
+                            border-radius: 50%;
+                        }
+
+                        object-fit: cover;
+                        width: 121px;
+                        height: 121px;
+                        margin: 43px 31px 0 30px;
+                    }
+                    .happy__text{
+                        align-self: flex-start;
+                        .happy__text-top{
+                            width: 344px;
+                            margin: 51px 0 29px 7px;
+                            object-fit: contain;
+                            font-family: OpenSans;
+                            font-size: 13px;
+                            line-height: 1.5;
+                            text-align: left;
+                            color: #7b7b7b;
+                        }
+                        .happy__text-bottom{
+                            text-transform: uppercase;
+                            font-family: Lato;
+                            font-size: 14px;
+                            line-height: 1.57;
+                            text-align: left;
+                            color: #99a9ae;
+                            span{
+                                color: #f6772c;
+
+                            }
+                        }
+
+                    }
                 }
             }
         }
     }
 
+    .title{
+        h3{
+            font-family: Gotham;
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: -0.75px;
+            color: #394b50;
+            text-align: center;
+        }
+        p{
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.22;
+            text-align: center;
+            color: #75888d;
+        }
+    }
+
+    .newsletter{
+        padding-top: 154px;
+        .newsletter__title{
+            margin-bottom: 38px;
+        }
+        .newsletter__form{
+            max-width: 928px;
+            display: flex;
+            margin: 0 auto 53px;
+            justify-content: space-between;
+            .newsletter__name{
+                width: 308px;
+                height: 47px;
+                margin: 0 10px 0 0;
+                padding: 16px 0 16px 17px;
+                object-fit: contain;
+                border: solid 1px #cbcbcb;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 14px;
+                }
+                input{
+                    font-family: OpenSans;
+                    font-size: 13px;
+                    text-align: left;
+                    color: #a9a9a9;
+                }
+            }
+            .newsletter__email{
+                width: 388px;
+                height: 47px;
+                margin: 0 10px 0 0;
+                padding: 16px 0 16px 17px;
+                object-fit: contain;
+                border: solid 1px #cbcbcb;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 14px;
+                }
+                input{
+                    font-family: OpenSans;
+                    font-size: 13px;
+                    text-align: left;
+                    color: #a9a9a9;
+                }
+            }
+            button{
+                text-transform: uppercase;
+                width: 218px;
+                height: 47px;
+                background-color: #ffbb42;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Lato;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+    }
+
+    .map{
+        img{
+            margin: 0 auto;
+
+        }
+        margin-bottom: 57px;
+    }
+
+    .nav{
+        margin-bottom: 53px;
+        .nav__line{
+            width: 100%;
+            height: 1px;
+            background-color: #ece7e3;
+            margin-bottom: 69px;
+        }
+        ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 29px;
+        }
+        text-transform: uppercase;
+        margin: 0 auto;
+        width: 726px;
+        font-family: Lato;
+        font-size: 13px;
+        text-align: left;
+        color: #394b50;
+
+        .nav__phone{
+            display: flex;
+            justify-content: space-between;
+            max-width: 173px;
+            margin: 0 auto 23px;
+            font-family: Lato;
+            font-size: 22px;
+            line-height: 1.09;
+            text-align: center;
+            color: #394b50;
+        }
+        .nav__socials{
+            align-items: center;
+            margin: 0 auto 52px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 104px;
+        }
+
+    }
+
+
+        
+}
+
+footer{
+    width: 100%;
+    background-color: #709dca;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    font-family: OpenSans;
+    font-size: 13px;
+    line-height: 1.85;
+    justify-content: center;
+
+    color: #fff;
 }
 
 

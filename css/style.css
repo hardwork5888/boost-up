@@ -2,6 +2,11 @@
 @import url(null.css);
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "Gotham";
   src: local("Gotham Black"), local("Gotham-Black"), url("../fonts/Gotham-Black.woff2") format("woff2"), url("../fonts/Gotham-Black.woff") format("woff"), url("../fonts/Gotham-Black.ttf") format("truetype");
@@ -578,6 +583,9 @@ header .header__wrapper .header__menu ul li.header__menu-chosen {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -586,4 +594,223 @@ header .header__wrapper .header__menu ul li.header__menu-chosen {
   width: 567px;
   height: 241px;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .happy .happy__wrapper .happy__cards .happy__card .happy__photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 121px;
+  height: 121px;
+  margin: 43px 31px 0 30px;
+}
+.wrapper .happy .happy__wrapper .happy__cards .happy__card .happy__photo img {
+  border-radius: 50%;
+}
+.wrapper .happy .happy__wrapper .happy__cards .happy__card .happy__text {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.wrapper .happy .happy__wrapper .happy__cards .happy__card .happy__text .happy__text-top {
+  width: 344px;
+  margin: 51px 0 29px 7px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  color: #7b7b7b;
+}
+.wrapper .happy .happy__wrapper .happy__cards .happy__card .happy__text .happy__text-bottom {
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: left;
+  color: #99a9ae;
+}
+.wrapper .happy .happy__wrapper .happy__cards .happy__card .happy__text .happy__text-bottom span {
+  color: #f6772c;
+}
+.wrapper .title h3 {
+  font-family: Gotham;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.75px;
+  color: #394b50;
+  text-align: center;
+}
+.wrapper .title p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.22;
+  text-align: center;
+  color: #75888d;
+}
+.wrapper .newsletter {
+  padding-top: 154px;
+}
+.wrapper .newsletter .newsletter__title {
+  margin-bottom: 38px;
+}
+.wrapper .newsletter .newsletter__form {
+  max-width: 928px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 53px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .newsletter .newsletter__form .newsletter__name {
+  width: 308px;
+  height: 47px;
+  margin: 0 10px 0 0;
+  padding: 16px 0 16px 17px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: solid 1px #cbcbcb;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .newsletter .newsletter__form .newsletter__name img {
+  margin-right: 14px;
+}
+.wrapper .newsletter .newsletter__form .newsletter__name input {
+  font-family: OpenSans;
+  font-size: 13px;
+  text-align: left;
+  color: #a9a9a9;
+}
+.wrapper .newsletter .newsletter__form .newsletter__email {
+  width: 388px;
+  height: 47px;
+  margin: 0 10px 0 0;
+  padding: 16px 0 16px 17px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: solid 1px #cbcbcb;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .newsletter .newsletter__form .newsletter__email img {
+  margin-right: 14px;
+}
+.wrapper .newsletter .newsletter__form .newsletter__email input {
+  font-family: OpenSans;
+  font-size: 13px;
+  text-align: left;
+  color: #a9a9a9;
+}
+.wrapper .newsletter .newsletter__form button {
+  text-transform: uppercase;
+  width: 218px;
+  height: 47px;
+  background-color: #ffbb42;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Lato;
+  font-size: 14px;
+  color: #fff;
+}
+.wrapper .map {
+  margin-bottom: 57px;
+}
+.wrapper .map img {
+  margin: 0 auto;
+}
+.wrapper .nav {
+  margin-bottom: 53px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 726px;
+  font-family: Lato;
+  font-size: 13px;
+  text-align: left;
+  color: #394b50;
+}
+.wrapper .nav .nav__line {
+  width: 100%;
+  height: 1px;
+  background-color: #ece7e3;
+  margin-bottom: 69px;
+}
+.wrapper .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 29px;
+}
+.wrapper .nav .nav__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 173px;
+  margin: 0 auto 23px;
+  font-family: Lato;
+  font-size: 22px;
+  line-height: 1.09;
+  text-align: center;
+  color: #394b50;
+}
+.wrapper .nav .nav__socials {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 104px;
+}
+
+footer {
+  width: 100%;
+  background-color: #709dca;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: OpenSans;
+  font-size: 13px;
+  line-height: 1.85;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
 }
