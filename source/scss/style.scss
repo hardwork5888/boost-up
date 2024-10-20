@@ -922,7 +922,17 @@ footer{
         }
 
         .how{
-            
+
+        }
+
+        .happy{
+            .happy__wrapper{
+                .happy__cards{
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                }
+            }
         }
     }
     
@@ -974,10 +984,89 @@ footer{
             right: 10px;
         }
     }
+}
 
 
+@media (max-width: 1000px) {
+    .wrapper{
+        .about-us{
+            height: auto;
+            display: block;
+            .about-us__pic{
+                display: none;
+            }
+            .about-us__info{
+                width: 100%;
+                .about-us__text{
+                    padding: 25px;
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                    h3{
+                        margin: 30px auto 30px;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                    
+                    button{
+                        text-align: center;
+                        margin: 30px auto;
+                        align-self: center;
+                    }
+                }
+            }
+        }
 
+        .newsletter{
+            .newsletter__form{
+                flex-direction: column;
+                align-items: center;
+                .newsletter__name, .newsletter__email, button{
+                    width: 308px;
+                    height: 47px;
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+    }
 
+}
 
+@media (max-width: 891px) {
+    .wrapper{
+        .how{
+            .how__wrapper{
+                .how__cards{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-template-rows: auto auto;
+                    justify-content: center;
+                    gap: 30px;
+                    .how__arrows{
+                        display: none;
+                    }
+                }
+            }
 
+        }
+    }
+}
+
+@media (max-width: 745px) {
+    .wrapper{
+        .nav{
+            .nav__line{
+                width: 80%;
+                margin: 0 auto 69px;
+            }
+            ul{
+                display: none;
+            }
+        }
+        .map{
+            display: none;
+        }
+    }
 }
