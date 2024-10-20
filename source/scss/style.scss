@@ -321,6 +321,9 @@ header{
             }
 
             .choos__cards{
+                .choos__slider-controls{
+                    display: none;
+                }
                 display: flex;
                 align-items: center;
                 .choos__card{
@@ -383,6 +386,10 @@ header{
                     width: 395px;
                     padding-top: 87px;
                     padding-bottom: 78px;
+                    @media (max-width: 1170px){
+                        padding-top: 57px;
+                        padding-bottom: 48px;
+                    }
                     h4{
                         color: #fff;
                     }
@@ -399,6 +406,7 @@ header{
                 }
                 
             }
+
         }
     }
 
@@ -725,4 +733,251 @@ footer{
     color: #fff;
 }
 
+@media (max-width: 1170px) {
+    body.lock{
+        overflow: hidden;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 35px;
+    }
+        header{
+        position: fixed;
+        z-index: 50;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 72px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            background-color: #e4871d;
+        }
+        .header__wrapper{
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 40px 0;
+            .header__burger{
+                display: block;
+                z-index: 51;
+                position: relative;
+                width: 30px;
+                height: 20px;
+                span{
+                    background-color: #111;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                    top: 9px;
+                    transition: all 0.3s ease 0s;
+                }
+ 
+            }
+            .header__menu{
+                position: fixed;
+                top:-100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #709dca;
+                overflow: auto;
+                z-index: 3;
+                padding: 70px 0 0 0;
+                transition: all 0.3s ease 0s;
+                .header__list{
+                    li{
+                        padding-left: 15px;
+                        color: #fff;
+                        height: 46px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        a{
+                            color: #fff;
+                        }
+                        
+                    }
+                    .header__menu-chosen{
+                        background-color: #709dca;
+                    }
+                    
+                    display: block;
+                }
+                &.active{
+                    top: 0;
+                }
+            }
+            button{
+                z-index: 51;
+            }
+        }
+        .header__logo, .social, .innovate__right{
+            display: none;
+        }
 
+        .header__burger::before, 
+        .header__burger::after{
+            transition: all 0.3s ease 0s;
+            content: '';
+            background-color: #111;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        }    
+        .header__burger::after{
+            bottom: 0;
+        } 
+        .header__burger:before{
+            top: 0;
+        }
+        .header__burger.active:before{
+            transition: all 0.3s ease 0s;
+            transform:rotate(45deg);
+            top: 9px;
+        }
+        .header__burger.active:after{
+            transition: all 0.3s ease 0s;
+            transform:rotate(-45deg);
+            bottom: 9px;
+        }
+        .header__burger.active span{
+            transition: all 0.3s ease 0s;
+            transform: scale(0);
+        }
+    
+        .header__menu{
+    
+        }
+    }
+    .wrapper{
+
+        .local-business{
+            .local-business__wrapper{
+                .local-business__title{
+                    margin-bottom: 60px;
+                    max-width: 400px;
+                    height: auto;
+                    h1{
+                        margin-bottom: 10px;
+                    }
+                }
+                .local-business__form{
+                    width: auto;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: start;
+                    .local-business__input{
+                        flex: 0 0 46px;
+                        width: 280px;
+                        margin: 0 0 15px 0;
+
+                    }
+                    .local__business_request{
+                        margin-left: 0;
+                        flex: 0 0 46px;
+                        width: 280px;
+                    }
+
+                }
+                .local-business__laptop{
+                    display: none;
+                }
+            }
+        }
+
+        .services {
+            .services__wrapper {
+                .services__paragraphs {
+                    padding-block: 15px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+        .about-us{
+            .about-us__info{
+                .about-us__text{
+                    padding-left: 30px;
+                    width: auto;
+                    padding-right: 10px;
+                }
+            }
+
+        }
+        .choos{
+            background-color: #fff;
+            .choos__wrapper{
+                padding: 60px 0 0;
+            }
+        }
+
+        .how{
+            
+        }
+    }
+    
+
+}
+
+
+@media (max-width: 1170px) {
+
+    .choos__cards {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        .choos__card {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+            display: none;
+        }
+        .choos__card.active {
+            display: block;
+        }
+    
+        .choos__slider-controls {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            pointer-events: none; /* Чтобы элементы внутри контейнера не блокировались */
+        }
+        .choos__slider-controls button {
+            pointer-events: all; /* Чтобы сами кнопки были кликабельными */
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    
+        #prev {
+            position: absolute;
+            left: 10px;
+        }
+    
+        #next {
+            position: absolute;
+            right: 10px;
+        }
+    }
+
+
+
+
+
+
+}

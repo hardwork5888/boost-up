@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="source/script.js"></script>
     <title>Doc</title>
 </head>
 <body>
@@ -12,17 +14,20 @@
         <div class="header__logo">
             <img src="img/header_logo.webp" alt="">
         </div>
-        <div class="header__menu">
-            <ul>
-                <li class="header__menu-chosen"><a href="#home" onclick="scrollToSection(event, 'home')">Home</a></li>
-                <li><a href="#services" onclick="scrollToSection(event, 'services')">Service</a></li>
-                <li><a href="#about-us" onclick="scrollToSection(event, 'about-us')">About us</a></li>
-                <li><a href="#pricing-table" onclick="scrollToSection(event, 'pricing-table')">Pricing Table</a></li>
-                <li><a href="#how" onclick="scrollToSection(event, 'how')">How it work</a></li>
-                <li><a href="#happy" onclick="scrollToSection(event, 'happy')">Happy Clients</a></li>
-                <li><a href="#contact-us" onclick="scrollToSection(event, 'contact-us')">Contact Us</a></li>
-            </ul>
+        <div class="header__burger">
+            <span></span>
         </div>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li><a href="#home" onclick="scrollToSection(event, 'home'); removeActiveClass();">Home</a></li>
+                <li><a href="#services" onclick="scrollToSection(event, 'services'); removeActiveClass();">Service</a></li>
+                <li><a href="#about-us" onclick="scrollToSection(event, 'about-us'); removeActiveClass();">About us</a></li>
+                <li><a href="#pricing-table" onclick="scrollToSection(event, 'pricing-table'); removeActiveClass();">Pricing Table</a></li>
+                <li><a href="#how" onclick="scrollToSection(event, 'how'); removeActiveClass();">How it work</a></li>
+                <li><a href="#happy" onclick="scrollToSection(event, 'happy'); removeActiveClass();">Happy Clients</a></li>
+                <li><a href="#contact-us" onclick="scrollToSection(event, 'contact-us'); removeActiveClass();">Contact Us</a></li>
+            </ul>
+        </nav>
     </div>
 </header>    
     <div class="wrapper">
@@ -169,6 +174,10 @@
                     <p>Lorem Ipsum is simply dummy text of the printing typesetting .</p>
                 </div>
                 <div class="choos__cards">
+                    <div class="choos__slider-controls">
+                        <button id="prev">Prev</button>
+                        <button id="next">Next</button>
+                      </div>
                     <div class="choos__card">
                         <h4>Basic plan</h4>
                         <img src="img/basic.png" alt="">
@@ -200,6 +209,7 @@
                         <button>Get Started</button>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -328,14 +338,6 @@
         <div class="map">
             <img src="img/map.png" alt="">
         </div>
-        <script>
-            function scrollToSection(event, sectionId) {
-                event.preventDefault(); // Останавливаем стандартное поведение ссылки
-                document.getElementById(sectionId).scrollIntoView({
-                    behavior: 'smooth' // Плавная прокрутка
-                });
-            }
-        </script>
         <div class="nav">
             <div class="nav__line"></div>
             <ul>
@@ -349,14 +351,14 @@
             </ul>
             <div class="nav__phone">
                 <img src="img/nav-phone.png" alt="">
-                <p>+987 9976 999</p>
+                <a  href="" type="phone">+987 9976 999</a>
             </div>
 
             <div class="nav__socials">
-                <img src="img/twitter.png" alt="">
-                <img src="img/facebook.png" alt="">
-                <img src="img/google.png" alt="">
-                <img src="img/linkedn.png" alt="">
+                <a href=""><img src="img/twitter.png" alt=""></a>
+                <a href=""><img src="img/facebook.png" alt=""></a>
+                <a href=""><img src="img/google.png" alt=""></a>
+                <a href=""><img src="img/linkedn.png" alt=""></a>
             </div>
         </div>
         
