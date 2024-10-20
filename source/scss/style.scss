@@ -896,6 +896,10 @@ footer{
 
         .services {
             .services__wrapper {
+                margin-top: 100px;
+                .services__title{
+
+                }
                 .services__paragraphs {
                     padding-block: 15px;
                     display: flex;
@@ -984,6 +988,7 @@ footer{
             right: 10px;
         }
     }
+    
 }
 
 
@@ -1057,6 +1062,7 @@ footer{
 @media (max-width: 745px) {
     .wrapper{
         .nav{
+            width: 100%;
             .nav__line{
                 width: 80%;
                 margin: 0 auto 69px;
@@ -1067,6 +1073,77 @@ footer{
         }
         .map{
             display: none;
+        }
+    }
+}
+
+@media (max-width: 615px) {
+    .wrapper{
+        .happy{
+            .happy__wrapper{
+                padding-inline: 20px;
+                .happy__cards{
+                    .happy__card{
+                        padding: 15px;
+                        width: auto;
+                        flex-direction: column;
+                        align-items: center;
+                        height: auto;
+                        .happy__text{
+                            height: auto;
+                            text-align: center;
+                            .happy__text-top, .happy__text-bottom{
+                                text-align: center;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+        }
+
+        .services{
+            height: auto;
+            .services__wrapper{
+                height: auto;
+                .services__paragraphs{
+                    height: auto;
+                    .services__paragraph{
+                        height: auto;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 15px;
+                        margin-bottom: 25px;
+                        .services__paragraph-text{
+                            height: auto;
+                            h3, p{
+                                text-align: center;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        padding-block: 10px;
+        p{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 512px){
+    .wrapper{
+        .how{
+            .how__wrapper{
+                .how__cards{
+                    grid-template-columns: auto;
+                    grid-template-rows: auto auto auto auto;
+                }
+            }
         }
     }
 }
